@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+p, h1 {
+    color: white;
+    font-family: "Century Gothic", century-gothic, sans-serif;
+}
+
+@keyframes rainbow {
+    0% {color: red}
+    17% {color: orange}
+    34% {color: yellow}
+    51% {color: green}
+    68% {color: blue}
+    85% {color: purple}
+    100% {color: red}
+ }
+
+.rainbow {
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
