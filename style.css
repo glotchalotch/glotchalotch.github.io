@@ -1,15 +1,49 @@
 body {
+    padding-top: 3%;
     background-color: black;
+}
+
+.footer {
+    padding-top: 2%;
+    padding-bottom: 3%;
+    text-align: center;
+    line-break: strict;
 }
 
 .center {
     text-align: center;
 }
 
-p, h1 {
+p, h1, h2, h5 {
     color: white;
     font-family: "Century Gothic", century-gothic, sans-serif;
 }
+
+.social {
+    text-align: center;
+}
+
+.social circle {
+    fill: black;
+    transition-property: fill;
+    transition-duration: 0.25s;
+}
+
+.social circle:hover {
+    fill: white;
+}
+
+.social circle ~ .social-logo {
+    color: white;
+    transition-property: color;
+    transition-duration: 0.25s;
+    pointer-events: none;
+}
+
+.social circle:hover ~ .social-logo {
+    color: black;
+}
+    
 
 @keyframes rainbow {
     0% {color: red}
